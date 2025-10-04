@@ -9,7 +9,13 @@ GPU 연산 및 관련 서브 모듈만 포함되어 있음을 알려드립니다
 🔗[High-BoostMeshFiltering_GPU](https://github.com/crocusia/High-BoostMeshFiltering_GPU) <br>
 
 # 🗃️ Summary 
+High-Boost Mesh Filtering에서 새로운 법선 벡터를 계산하는 방법으로 인해 **경계 영역**에서 계단현상이 발생한다. <br>
+Mesh Saliency를 통해 **지역적 중요도가 높은 영역(경계 영역)을 판별**하고, 강화를 위한 법선벡터 연산에 **Saliency 변화량 기반 가중치**를 적용한다.<br>
 
+<img width="1799" height="379" alt="image" src="https://github.com/user-attachments/assets/a06c4772-513a-4453-8aeb-375b4d445120" />
+
+- 경계 영역의 곡률을 유지를 통해 계단현상을 완화하며 안정적인 형상 강화
+- 단순 곡률만 고려한 기존 방법에서는 누락된 Mesh의 중요도가 높은 특징 강화
 
 # 연구 목표
 
